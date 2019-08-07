@@ -15,7 +15,7 @@ env:
   - DISTRO=acrn-demo-sos
 
 install:
- - git clone --depth=50 --branch=master git://git.yoctoproject.org/poky ../poky
+ - git clone --depth=50 --branch=warrior git://git.yoctoproject.org/poky ../poky
  - . ../poky/oe-init-build-env $TRAVIS_BUILD_DIR/build
  - bitbake-layers add-layer ../../meta-acrn
 
